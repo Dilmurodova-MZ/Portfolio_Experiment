@@ -513,6 +513,10 @@ img{
 }
 
 .project__title, .project__description{
+  color: var(--first-color-lighten);
+}
+
+.project__description{
   margin-bottom: var(--mb-4);
 }
 
@@ -522,7 +526,40 @@ img{
 }
 
 /* ===== WORKS =====*/
+.works__container{
+  justify-items: center;
+  row-gap: 2rem;
+}
 
+.works__img{
+  position: relative;
+  overflow: hidden;
+  border-radius: .5rem;
+}
+
+.works__data{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  background: rgbs(204,75,44,.7);                                /* background bn background-color farqi*/
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.works__link{
+  display: inline-flex;                                          /*  inline-flex ne ponyatniy */
+  font-size: 1.5rem;
+  background-color: var(--first-color-lighten);
+  color: var(--first-color);
+  padding: .25rem;
+  margin-bottom: var(--mb-2);
+}
+
+/*   54:04  https://www.youtube.com/watch?v=owEHlDn0JYQ  */
 
 /* ===== CONTACT =====*/
 
